@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Mia App Dioxusdioxus | ⛺</title>
+  <link rel="preload" as="script" href="/./assets/frontend-96d09fa4c95fe9a8.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/./assets/frontend_bg-a4504dc557ce4483.wasm" crossorigin></head>
+  <body>
+    <!-- Dioxus inietterà qui la tua app -->
+    <div id="main"></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/./assets/frontend-96d09fa4c95fe9a8.js").then(
+                ({ default: init }) => {
+                init("/./assets/frontend_bg-a4504dc557ce4483.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
+</html>
